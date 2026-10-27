@@ -1,0 +1,5 @@
+cURL command:
+curl.exe -sS -H 'Accept: application/vnd.github+json' https://api.github.com/repos/ernurzaszak-boop/finaproject-fork | ConvertFrom-Json | ForEach-Object { [pscustomobject]@{ full_name=$_.full_name; fork=$_.fork; parent=$_.parent.full_name } } | ConvertTo-Json -Compress
+
+Output:
+{"full_name":"ernurzaszak-boop/finaproject-fork","fork":true,"parent":"ibm-developer-skills-network/expressBookReviews"}
