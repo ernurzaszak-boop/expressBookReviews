@@ -1,0 +1,5 @@
+cURL command:
+curl -sS -X POST http://localhost:5000/register -H "Content-Type: application/json" -d '{"username":"skills_network_demo","password":"demo-only-password"}'
+
+Output:
+{"message":"User successfully registered"}
